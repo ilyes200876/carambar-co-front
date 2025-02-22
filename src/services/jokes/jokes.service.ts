@@ -18,7 +18,7 @@ export class JokesService {
   }
 
   getJokeById(id: number) {
-    return this.http.get<IJoke>(this.urlJokes +id);
+    return this.http.get<IJoke>(this.urlJokes + "/" +id);
   }
 
   getRandomJoke() {

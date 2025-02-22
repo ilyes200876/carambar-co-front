@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { JokesComponent } from './jokes/jokes.component';
 import { HomeComponent } from './home/home.component';
 import { RandomJokeComponent } from './random-joke/random-joke.component';
+import { JokeDetailsComponent } from './joke-details/joke-details.component';
+import { AddJokeComponent } from './add-joke/add-joke.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { RandomJokeComponent } from './random-joke/random-joke.component';
     JokesComponent,
     HomeComponent,
     RandomJokeComponent,
+    JokeDetailsComponent,
+    AddJokeComponent,
     
   ],
   imports: [
