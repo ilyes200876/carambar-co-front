@@ -1,0 +1,9 @@
+
+
+<div class="container mt-5">
+    <div *ngFor="let joke of jokes">
+        <a routerLink="/blagues/{{ joke.id }}"> Blaque numéro {{ joke.id }}</a>
+        <h3>{{ joke.question }}</h3>
+        <p>- {{ joke.response }}</p>
+    </div>
+</div>
