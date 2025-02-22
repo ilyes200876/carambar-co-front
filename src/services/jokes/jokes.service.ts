@@ -27,8 +27,8 @@ export class JokesService {
 
   createJoke(joke: IJoke) {
     let body = JSON.stringify(joke);
-    let header = { 'content-type': 'application/x-www-form-urlencoded'};
-    return this.http.post<IJoke>(urlApi + "/createJoke/", body, {'headers': header})
+    let header = { 'content-type': 'application/json'};
+    return this.http.post<IJoke>(urlApi + "/createJoke", body, {'headers': header})
     .pipe(
       catchError((error) => {
         console.error(error);

@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { RandomJokeComponent } from './random-joke/random-joke.component';
 import { JokeDetailsComponent } from './joke-details/joke-details.component';
 import { AddJokeComponent } from './add-joke/add-joke.component';
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { AddJokeComponent } from './add-joke/add-joke.component';
   ],
   imports: [
     BrowserModule,
-    
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [

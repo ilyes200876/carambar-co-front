@@ -40,9 +40,5 @@ export class RandomJokeComponent {
     }
   }
 
-  // this.route.params.subscribe(params => {
-  //   this.jokeServive.getRandomJoke(params['id']).subscribe(data => {
-  //     this.joke = data;
-  //   });
-  // });
+
 }
