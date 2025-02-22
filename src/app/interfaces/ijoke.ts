@@ -1,5 +1,5 @@
 export interface IJoke {
-    id: number,
+    id?: number,
     question: string,
     response: string,
     

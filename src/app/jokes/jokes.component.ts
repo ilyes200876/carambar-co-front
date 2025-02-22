@@ -7,7 +7,7 @@ import { JokesService } from '../../services/jokes/jokes.service';
   templateUrl: './jokes.component.html',
   styleUrl: './jokes.component.css'
 })
-export class JokesComponent {
+export class JokesComponent  implements OnInit{
 
   jokes: IJoke[] = [];
   joke: IJoke|undefined;
@@ -17,7 +17,7 @@ export class JokesComponent {
   ngOnInit() {
     this.jokeService.getAllJokes().subscribe(dataJokes => {
       this.jokes = dataJokes;
-      console.log(this.jokes);
+      // console.log(this.jokes);
     });
   }
 }
