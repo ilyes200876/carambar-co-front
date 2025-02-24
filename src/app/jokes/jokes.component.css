@@ -4,9 +4,17 @@
     
     
 }
+h1 {
+    font-weight: 900;
+}
 
 h4 {
-    text-decoration: underline
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+button a{
+    text-decoration: none;
 }
 
 
@@ -16,4 +24,29 @@ button:hover {
     background-color: rgb(115 231 255);
     color: blue;
     
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    h1 {
+        font-size: 19px;
+    }
+
+    button {
+        width: 25%;
+        height: 2rem;
+        font-size: small;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
+    h5 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
