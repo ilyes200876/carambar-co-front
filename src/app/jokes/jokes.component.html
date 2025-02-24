@@ -1,9 +1,18 @@
 
 
 <div class="container mt-5">
-    <div *ngFor="let joke of jokes">
-        <a routerLink="/blagues/{{ joke.id }}"> Blaque numéro {{ joke.id }}</a>
-        <h3>{{ joke.question }}</h3>
-        <p>- {{ joke.response }}</p>
+    <h1>Nos différentes blagues :</h1>
+    <div class="row">
+        <div class="col-sm-6 mb-2" *ngFor="let joke of jokes">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Blague numéro {{ joke.id }}</h4>
+                    <h5 class="card-title">{{ joke.question }}</h5>
+                    <p class="card-text">{{ joke.response }}</p>
+                    <button class="btn btn-outline-primary"><a routerLink="/blagues/{{ joke.id }}" >voir</a></button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+

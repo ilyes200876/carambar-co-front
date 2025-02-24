@@ -11,6 +11,7 @@ import { RandomJokeComponent } from './random-joke/random-joke.component';
 import { JokeDetailsComponent } from './joke-details/joke-details.component';
 import { AddJokeComponent } from './add-joke/add-joke.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     RandomJokeComponent,
     JokeDetailsComponent,
     AddJokeComponent,
+    FooterComponent,
     
   ],
   imports: [

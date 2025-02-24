@@ -1,0 +1,14 @@
+footer {
+    /* bottom: 10px; */
+    /* display: flex;
+    justify-content: start; */
+    height: 10rem !important;
+    width: 100%;
+    
+    font-family: 'Kalnia', serif;
+    
+    color: white;
+    background-color: rgb(115 231 255);
+    
+    margin-top: 5rem;
+}

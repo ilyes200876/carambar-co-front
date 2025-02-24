@@ -3,6 +3,7 @@ import { IJoke } from '../interfaces/ijoke';
 import { FormControl, FormGroup } from '@angular/forms';
 import { JokesService } from '../../services/jokes/jokes.service';
 import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-joke',
@@ -13,7 +14,7 @@ export class AddJokeComponent {
 
   jokes: IJoke[] = [];
 
-  constructor(private jokeService: JokesService, private http: HttpClient) {}
+  constructor(private jokeService: JokesService, private http: HttpClient,private router: Router) {}
 
 
   public formAdd: FormGroup = new FormGroup({
@@ -24,15 +25,17 @@ export class AddJokeComponent {
   onSubmit(){
     if(this.formAdd.valid){
       let joke: IJoke = {
-        
+        id: 0,
         question: this.formAdd.value.question,
         response: this.formAdd.value.response
       }
-      console.log(joke);
+      
 
       this.jokeService.createJoke(joke).subscribe(response => {
-        this.formAdd.reset();
+        // this.formAdd.reset();
+        console.log(joke);
         this.jokes.push;
+        this.router.navigate(['/blagues']);
       });
     }
   }

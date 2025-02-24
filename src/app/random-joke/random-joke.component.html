@@ -1,13 +1,12 @@
-<p>random-joke works!</p>
 
-<div>
-    <button (click)="getRandomJoke(); openModal()">Blague aléatoire</button>
+<div class="container homeButtonContainer">
+    <button type="button" class="btn btn-outline-primary randomButton" (click)="getRandomJoke(); openModal()">Blague aléatoire</button>
 </div>
 
 <div class="modal" id="jokeModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header d-flex justify-content-between">
                 <h5 class="modal-title">blague numéro {{ joke?.id }}</h5>
                 <button type="button" (click)="closeModal()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -17,9 +16,9 @@
                     <p>{{ joke?.response }}</p>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" (click)="closeModal()" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <div class="text-center mb-5">
+                <button type="button" (click)="closeModal()" class="btn btn-outline-primary randomButton" data-bs-dismiss="modal">Fermer</button>
+                
             </div>
         </div>
     </div>
