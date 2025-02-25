@@ -10,7 +10,7 @@ import { JokesService } from '../../services/jokes/jokes.service';
 export class JokesComponent  implements OnInit{
 
   jokes: IJoke[] = [];
-  joke: IJoke|undefined;
+  
 
   constructor(private jokeService: JokesService) {}
 
@@ -20,4 +20,11 @@ export class JokesComponent  implements OnInit{
       // console.log(this.jokes);
     });
   }
+
+  deleteJoke (id: number, index: number) {
+    this.jokeService.deleteJoke(id).subscribe(jokeDelete => {
+      this.jokes.splice(index,1);
+    });
+  }
+
 }

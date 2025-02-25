@@ -37,4 +37,8 @@ export class JokesService {
     );
 
   }
+
+  deleteJoke(id:number) {
+    return this.http.delete(this.urlJokes + "/delete/" + id);
+  }
 }
