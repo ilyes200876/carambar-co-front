@@ -1,0 +1,48 @@
+#editJoke {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+}
+
+h1 {
+    font-weight: bold;
+}
+
+form {
+    border: thick double #32a1ce;
+    border-radius: 20px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+label {
+    font-size: x-large;
+}
+
+button:hover {
+
+    background-color: rgb(115 231 255);
+    color: blue;
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    h1 {
+        font-size: 19px;
+    }
+
+    button {
+        width: 50%;
+        height: 3rem;
+        font-size: small;
+    }
+
+    label {
+        font-size: small;
+    }
+}

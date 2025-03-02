@@ -38,6 +38,12 @@ export class JokesService {
 
   }
 
+  updateJoke(id: number, data: any) {
+    let body = JSON.stringify(data);
+    let header = { 'content-type': 'application/json'};
+    return this.http.put<any>(this.urlJokes + "/update/" + id, body,  {'headers': header});
+  }
+
   deleteJoke(id:number) {
     return this.http.delete(this.urlJokes + "/delete/" + id);
   }

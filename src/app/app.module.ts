@@ -12,6 +12,7 @@ import { JokeDetailsComponent } from './joke-details/joke-details.component';
 import { AddJokeComponent } from './add-joke/add-joke.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { JokeEditComponent } from './joke-edit/joke-edit.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
     JokeDetailsComponent,
     AddJokeComponent,
     FooterComponent,
+    JokeEditComponent,
     
   ],
   imports: [

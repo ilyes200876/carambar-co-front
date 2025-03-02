@@ -21,6 +21,7 @@ export class JokesComponent  implements OnInit{
     });
   }
 
+
   deleteJoke (id: number, index: number) {
     this.jokeService.deleteJoke(id).subscribe(jokeDelete => {
       this.jokes.splice(index,1);
